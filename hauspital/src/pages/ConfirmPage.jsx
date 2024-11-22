@@ -25,7 +25,7 @@ const ConfirmPage = () => {
         </p>
 
         <div className="flex flex-col items-center ">
-          <div className="py-[30px] mt-[15px] w-[350px] bg-col3 text-[30px] text-white rounded-xl">
+          <div className="py-[30px] mt-[15px] w-[320px] bg-col3 text-[30px] text-white rounded-xl">
             <p className="flex justify-center">오늘 오후 6시</p>
             <p className="flex justify-center">전후로</p>
           </div>

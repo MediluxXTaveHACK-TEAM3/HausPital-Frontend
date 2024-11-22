@@ -25,7 +25,7 @@ const PredictPage = () => {
         </p>
 
         <div className="flex flex-col items-center ">
-          <div className="py-[30px] mt-[15px] w-[350px] bg-col3 text-[30px] text-white rounded-xl">
+          <div className="py-[30px] mt-[15px] w-[320px] bg-col3 text-[30px] text-white rounded-xl">
             <p className="flex justify-center">11/23 토요일</p>
             <p className="flex justify-center">오후 3시</p>
           </div>
