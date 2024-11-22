@@ -8,6 +8,7 @@ export default {
         black: "#000000",
         custom: {
           blue: "#6B77F8",
+          gray: "#B7B9C9",
         },
       },
       fontSize: {
@@ -15,6 +16,9 @@ export default {
         d2: ["14px", { lineHeight: "normal" }], //14px - hard
         d3: ["16px", { lineHeight: "normal" }], //16px - hard
         d4: ["12px", { lineHeight: "normal" }], //12px - hard
+        s1: ["24px", { lineHeight: "normal" }], //12px - hard
+        s2: ["32px", { lineHeight: "normal" }], //12px - hard
+        s3: ["36px", { lineHeight: "normal" }], //12px - hard
       },
       boxShadow: {
         custom1: " 0px 0px 4px 0px rgba(0, 0, 0, 0.25)",
