@@ -11,13 +11,7 @@ const GenderPage = () => {
   return (
     <>
       <div>
-        <Header
-          text="내 정보 입력하기"
-          page="3"
-          leftChild={
-            <BackButton className="pt-8 text-[40px] font-bold" text="<" />
-          }
-        />
+        <Header text="내 정보 입력하기" page="3" />
       </div>
       <div>
         <Title text="성별을 골라주세요" />

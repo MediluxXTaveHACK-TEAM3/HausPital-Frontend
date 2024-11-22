@@ -11,13 +11,7 @@ const AddressPage = () => {
   return (
     <>
       <div>
-        <Header
-          text="내 정보 입력하기"
-          page="4"
-          leftChild={
-            <BackButton className="pt-8 text-[40px] font-bold" text="<" />
-          }
-        />
+        <Header text="내 정보 입력하기" page="4" />
       </div>
       <div>
         <Title text="주소를 입력해주세요" />

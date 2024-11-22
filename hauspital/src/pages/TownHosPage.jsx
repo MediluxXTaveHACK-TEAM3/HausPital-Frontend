@@ -11,13 +11,7 @@ const TownHosPage = () => {
   return (
     <>
       <div>
-        <Header
-          text="내 정보 입력하기"
-          page="6"
-          leftChild={
-            <BackButton className="pt-8 text-[40px] font-bold" text="<" />
-          }
-        />
+        <Header text="내 정보 입력하기" page="6" />
       </div>
       <div>
         <Title text="다니는 동네 병원🏥을 입력해주세요" />

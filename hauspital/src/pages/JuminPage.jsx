@@ -12,13 +12,7 @@ const JuminPage = () => {
   return (
     <>
       <div>
-        <Header
-          text="내 정보 입력하기"
-          page="2"
-          leftChild={
-            <BackButton className="pt-8 text-[40px] font-bold" text="<" />
-          }
-        />
+        <Header text="내 정보 입력하기" page="2" />
       </div>
       <div>
         <Title text="주민등록번호 앞자리를 입력해주세요" />

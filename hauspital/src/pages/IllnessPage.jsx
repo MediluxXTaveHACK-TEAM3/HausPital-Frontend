@@ -11,13 +11,7 @@ const IllnessPage = () => {
   return (
     <>
       <div>
-        <Header
-          text="내 정보 입력하기"
-          page="7"
-          leftChild={
-            <BackButton className="pt-8 text-[40px] font-bold" text="<" />
-          }
-        />
+        <Header text="내 정보 입력하기" page="7" />
       </div>
       <div>
         <Title text="기저질환을 입력해주세요" />

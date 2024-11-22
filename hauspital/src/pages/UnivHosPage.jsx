@@ -12,13 +12,7 @@ const UnivHosPage = () => {
   return (
     <>
       <div>
-        <Header
-          text="내 정보 입력하기"
-          page="5"
-          leftChild={
-            <BackButton className="pt-8 text-[40px] font-bold" text="<" />
-          }
-        />
+        <Header text="내 정보 입력하기" page="5" />
       </div>
       <div>
         <Title text="다니는 대학 병원🏥을 입력해주세요" />
