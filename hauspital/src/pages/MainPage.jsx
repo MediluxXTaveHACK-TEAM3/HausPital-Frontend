@@ -9,6 +9,10 @@ import logo from "../assets/logo.svg";
 const MainPage = () => {
   return (
     <div>
+      <div>
+        <Input placeholder="김병원" />
+      </div>
+
       <div className="flex text-8 ">
         <p className="text-col2">병원</p>
         <p className="text-gray-800">을 </p>
