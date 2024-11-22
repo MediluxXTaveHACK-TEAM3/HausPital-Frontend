@@ -17,14 +17,14 @@ function App() {
   return (
     <Router future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
       <Routes>
-        {/* <Route path="/" element={<MainPage />} /> */}
-        {/* <Route path="/" element={<NamePage />} /> */}
-        {/* <Route path="/" element={<JuminPage />} /> */}
-        {/* <Route path="/" element={<GenderPage />} /> */}
-        {/* <Route path="/" element={<AddressPage />} /> */}
-        {/* <Route path="/" element={<UnivHosPage />} /> */}
-        {/* <Route path="/" element={<TownHosPage />} /> */}
-        <Route path="/" element={<IllnessPage />} />
+        <Route path="/" element={<MainPage />} />
+        <Route path="/name" element={<NamePage />} />
+        <Route path="/jumin" element={<JuminPage />} />
+        <Route path="/gender" element={<GenderPage />} />
+        <Route path="/address" element={<AddressPage />} />
+        <Route path="/univhos" element={<UnivHosPage />} />
+        <Route path="/townhos" element={<TownHosPage />} />
+        <Route path="/illness" element={<IllnessPage />} />
       </Routes>
     </Router>
   );
