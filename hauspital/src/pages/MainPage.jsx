@@ -32,7 +32,7 @@ const MainPage = () => {
         <LoginButton
           text="시작하기"
           onClick={() => {
-            nav(`/name`);
+            nav(`/onboarding-1`);
           }}
         />
         {/* <LoginButton text="가입하기" /> */}
