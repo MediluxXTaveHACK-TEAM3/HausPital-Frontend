@@ -9,7 +9,7 @@ import logo from "../assets/logo.svg";
 const MainPage = () => {
   return (
     <>
-      <div className="p-10 mt-[100px]">
+      <div className="p-10 mt-[65px]">
         <div className="flex justify-center text-[32px] font-semibold">
           <p className="text-col2">병원</p>
           <p className="text-gray-800">을</p>
