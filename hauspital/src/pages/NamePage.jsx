@@ -4,6 +4,7 @@ import BackButton from "../components/BackButton";
 import LoginButton from "../components/LoginButton";
 import Title from "../components/Title";
 import Input from "../components/Input";
+import { useNavigate } from "react-router-dom";
 
 const NamePage = () => {
   return (
@@ -25,7 +26,7 @@ const NamePage = () => {
         <Input placeholder="김병원" />
       </div>
 
-      <div className="flex justify-center mt-[250px]">
+      <div className="flex justify-center mt-[300px]">
         <NextButton text="다음" />
       </div>
     </>

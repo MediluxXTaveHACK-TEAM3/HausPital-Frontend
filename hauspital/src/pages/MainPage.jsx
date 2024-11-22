@@ -21,7 +21,7 @@ const MainPage = () => {
       <div className="flex justify-center p-10">
         <img src={logo} alt="Logo" />
       </div>
-      <div className="flex flex-col justify-center gap-3 mt-20">
+      <div className="flex flex-col items-center justify-center gap-3 mt-20">
         <LoginButton className="" text="로그인" />
         <LoginButton text="회원가입" />
       </div>
