@@ -24,7 +24,11 @@ const TownHosPage = () => {
       </div>
 
       <div className="flex justify-center mt-[65px]">
-        <Input placeholder="하우스피탈대학병원" tag="동네병원" />
+        <Input
+          placeholder="하우스피탈대학병원"
+          tag="동네병원"
+          add="+ 추가하기"
+        />
       </div>
 
       <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2">
