@@ -1,4 +1,3 @@
-
 import { useNavigate } from "react-router-dom";
 import backIcon from "../assets/doctorPage/back.svg";
 const Header = ({ text, page }) => {
@@ -14,12 +13,10 @@ const Header = ({ text, page }) => {
           src={backIcon}
           onClick={handleBackClick}
         />
-
         <div className="text-[20px] text-gray-700 font-semibold">{text}</div>
-
       </div>
-    );
-  }
+    </div>
+  );
 };
 
 export default Header;
