@@ -1,7 +1,9 @@
 const MainPage = () => {
+  
+
   return (
     <div>
-      <div className="text-orange-600">병원을 집으로</div>
+      <div className="text-black">병원을 집으로</div>
     </div>
   );
 };
