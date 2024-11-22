@@ -10,6 +10,8 @@ import JuminPage from "./pages/JuminPage";
 import GenderPage from "./pages/GenderPage";
 import AddressPage from "./pages/AddressPage";
 import UnivHosPage from "./pages/UnivHosPage";
+import TownHosPage from "./pages/TownHosPage";
+import IllnessPage from "./pages/IllnessPage";
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
         {/* <Route path="/" element={<JuminPage />} /> */}
         {/* <Route path="/" element={<GenderPage />} /> */}
         {/* <Route path="/" element={<AddressPage />} /> */}
-        <Route path="/" element={<UnivHosPage />} />
+        {/* <Route path="/" element={<UnivHosPage />} /> */}
+        {/* <Route path="/" element={<TownHosPage />} /> */}
+        <Route path="/" element={<IllnessPage />} />
       </Routes>
     </Router>
   );

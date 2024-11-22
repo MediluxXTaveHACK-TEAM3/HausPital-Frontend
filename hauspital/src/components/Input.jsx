@@ -1,4 +1,4 @@
-const Input = ({ placeholder, value, onChange, tag }) => {
+const Input = ({ placeholder, onChange, tag, add }) => {
   return (
     <>
       <div>
@@ -9,9 +9,12 @@ const Input = ({ placeholder, value, onChange, tag }) => {
           <input
             className="w-[310px] h-auto bg-gray-200 border-none"
             placeholder={placeholder}
-            value={value}
             onChange={onChange}
           />
+        </div>
+
+        <div className="text-right p-2">
+          <button className=" text-gray-400 border-none">{add}</button>
         </div>
       </div>
     </>
