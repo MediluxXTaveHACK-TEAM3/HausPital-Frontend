@@ -6,6 +6,12 @@ export default {
       colors: {
         white: "#FFF",
         black: "#000000",
+        col1: "#9747FF",
+        col2: "#5260FF",
+        col3: "#6B77F8",
+        orange: {
+          50: "#FFFAE6",
+        },
         custom: {
           blue: "#6B77F8",
           gray: "#B7B9C9",
@@ -27,6 +33,7 @@ export default {
         "button-gradation": "linear-gradient(180deg, #9747FF 0%, #5260FF 100%)",
         "background-gradation":
           "linear-gradient(180deg, #FFF 87%, #BFC4FF 100%)",
+
       },
     },
   },
