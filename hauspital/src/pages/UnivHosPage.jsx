@@ -32,13 +32,15 @@ const UnivHosPage = () => {
         <Input placeholder="김병원" tag="교수" />
       </div>
 
-      <div className="flex justify-center mt-[110px]">
-        <NextButton
-          text="다음"
-          onClick={() => {
-            nav(`/townhos`);
-          }}
-        />
+      <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2">
+        <div className="flex justify-center mt-[110px]">
+          <NextButton
+            text="다음"
+            onClick={() => {
+              nav(`/townhos`);
+            }}
+          />
+        </div>
       </div>
     </>
   );

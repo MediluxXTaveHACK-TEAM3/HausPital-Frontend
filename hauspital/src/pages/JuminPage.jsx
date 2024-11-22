@@ -28,13 +28,15 @@ const JuminPage = () => {
         <Input placeholder="971021" />
       </div>
 
-      <div className="flex justify-center mt-[240px]">
-        <NextButton
-          text="다음"
-          onClick={() => {
-            nav(`/gender`);
-          }}
-        />
+      <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2">
+        <div className="flex justify-center mt-[240px]">
+          <NextButton
+            text="다음"
+            onClick={() => {
+              nav(`/gender`);
+            }}
+          />
+        </div>
       </div>
     </>
   );

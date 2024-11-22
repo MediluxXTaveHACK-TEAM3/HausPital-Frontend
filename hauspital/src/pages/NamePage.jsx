@@ -27,13 +27,15 @@ const NamePage = () => {
         <Input placeholder="김병원" />
       </div>
 
-      <div className="flex justify-center mt-[300px]">
-        <NextButton
-          text="다음"
-          onClick={() => {
-            nav(`/jumin`);
-          }}
-        />
+      <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2">
+        <div className="flex justify-center">
+          <NextButton
+            text="다음"
+            onClick={() => {
+              nav(`/jumin`);
+            }}
+          />
+        </div>
       </div>
     </>
   );

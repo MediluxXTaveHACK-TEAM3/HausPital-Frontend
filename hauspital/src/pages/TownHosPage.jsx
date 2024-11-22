@@ -27,13 +27,15 @@ const TownHosPage = () => {
         <Input placeholder="하우스피탈대학병원" tag="동네병원" />
       </div>
 
-      <div className="flex justify-center mt-[255px]">
-        <NextButton
-          text="다음"
-          onClick={() => {
-            nav(`/illness`);
-          }}
-        />
+      <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2">
+        <div className="flex justify-center">
+          <NextButton
+            text="다음"
+            onClick={() => {
+              nav(`/illness`);
+            }}
+          />
+        </div>
       </div>
     </>
   );
