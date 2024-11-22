@@ -1,9 +1,9 @@
 const Header =({title, leftChild})=>{
     return(
-        <header>
-            <div>{}</div>
-            <div></div>
-        </header>
+        <div className="">
+            <div>{leftChild}</div>
+            <div>{title}</div>
+        </div>
     );
 };
 
