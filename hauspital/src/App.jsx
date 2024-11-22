@@ -15,7 +15,6 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/doctor" element={<DoctorMainPage />} />
         <Route path="/doctor-match" element={<DoctorMatchPage />} />
-
         <Route path="/onboarding-1" element={<FontPage />} />
       </Routes>
     </Router>
