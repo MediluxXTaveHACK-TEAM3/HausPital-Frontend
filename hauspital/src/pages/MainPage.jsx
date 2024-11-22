@@ -28,7 +28,7 @@ const MainPage = () => {
       <div className="flex justify-center p-6">
         <img src={logo} alt="Logo" />
       </div>
-      <div className="flex flex-col items-center justify-center gap-3 mt-[130px]">
+      <div className="flex flex-col items-center justify-center mt-[170px]">
         <LoginButton
           text="시작하기"
           onClick={() => {

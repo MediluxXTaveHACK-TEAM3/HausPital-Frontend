@@ -20,11 +20,11 @@ body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 #root {
-  width: 24.5625rem;
-  height: 100svh;
+  @apply w-[393px] h-[700px] bg-gradient-to-b from-[#FFFFFF] via-[#FFF] to-[#BFC4FF];
   margin: 0 auto;
 }
 @media (max-width: 24rem) {
