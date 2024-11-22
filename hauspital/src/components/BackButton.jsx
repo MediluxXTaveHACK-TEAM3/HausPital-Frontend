@@ -1,6 +1,8 @@
-const BackButton = ({text, onClick}) => (
+const BackButton = ({ text, onClick }) => (
   <div className="flex items-center">
-    <button onClick={onClick}>{text}</button>
+    <button className=" text-[20px] font-bold" onClick={onClick}>
+      {text}
+    </button>
   </div>
 );
 
