@@ -7,6 +7,7 @@ import Input from "../components/Input";
 import { useNavigate } from "react-router-dom";
 
 const NamePage = () => {
+  const nav = useNavigate();
   return (
     <>
       <div>
@@ -27,7 +28,12 @@ const NamePage = () => {
       </div>
 
       <div className="flex justify-center mt-[300px]">
-        <NextButton text="다음" />
+        <NextButton
+          text="다음"
+          onClick={() => {
+            nav(`/jumin`);
+          }}
+        />
       </div>
     </>
   );

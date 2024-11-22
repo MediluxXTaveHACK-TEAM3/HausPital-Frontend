@@ -8,6 +8,8 @@ import logo from "../assets/logo.svg";
 import { useNavigate } from "react-router-dom";
 
 const MainPage = () => {
+  const nav = useNavigate();
+
   return (
     <>
       <div className="p-10 mt-[60px]">
@@ -27,7 +29,12 @@ const MainPage = () => {
         <img src={logo} alt="Logo" />
       </div>
       <div className="flex flex-col items-center justify-center gap-3 mt-[130px]">
-        <LoginButton text="시작하기" />
+        <LoginButton
+          text="시작하기"
+          onClick={() => {
+            nav(`/name`);
+          }}
+        />
         {/* <LoginButton text="가입하기" /> */}
       </div>
     </>

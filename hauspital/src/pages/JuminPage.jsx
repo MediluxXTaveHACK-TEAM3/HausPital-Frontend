@@ -7,6 +7,8 @@ import Input from "../components/Input";
 import { useNavigate } from "react-router-dom";
 
 const JuminPage = () => {
+  const nav = useNavigate();
+
   return (
     <>
       <div>
@@ -19,15 +21,20 @@ const JuminPage = () => {
         />
       </div>
       <div>
-        <Title text="주민등록번호 앞자리를 입력해주세요"/>
+        <Title text="주민등록번호 앞자리를 입력해주세요" />
       </div>
 
       <div className="flex justify-center mt-[90px]">
         <Input placeholder="971021" />
       </div>
 
-      <div className="flex justify-center mt-[300px]">
-        <NextButton text="다음" />
+      <div className="flex justify-center mt-[240px]">
+        <NextButton
+          text="다음"
+          onClick={() => {
+            nav(`/gender`);
+          }}
+        />
       </div>
     </>
   );

@@ -7,6 +7,7 @@ import Input from "../components/Input";
 import { useNavigate } from "react-router-dom";
 
 const AddressPage = () => {
+  const nav = useNavigate();
   return (
     <>
       <div>
@@ -26,8 +27,13 @@ const AddressPage = () => {
         <Input placeholder="서울시 병원동 의사구" />
       </div>
 
-      <div className="flex justify-center mt-[300px]">
-        <NextButton text="다음" />
+      <div className="flex justify-center mt-[270px]">
+        <NextButton
+          text="다음"
+          onClick={() => {
+            nav(`/univhos`);
+          }}
+        />
       </div>
     </>
   );

@@ -7,6 +7,7 @@ import Input from "../components/Input";
 import { useNavigate } from "react-router-dom";
 
 const TownHosPage = () => {
+  const nav = useNavigate();
   return (
     <>
       <div>
@@ -26,8 +27,13 @@ const TownHosPage = () => {
         <Input placeholder="하우스피탈대학병원" tag="동네병원" />
       </div>
 
-      <div className="flex justify-center mt-[260px]">
-        <NextButton text="다음" />
+      <div className="flex justify-center mt-[255px]">
+        <NextButton
+          text="다음"
+          onClick={() => {
+            nav(`/illness`);
+          }}
+        />
       </div>
     </>
   );
