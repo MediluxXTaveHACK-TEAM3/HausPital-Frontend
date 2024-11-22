@@ -8,12 +8,8 @@ import logo from "../assets/logo.svg";
 
 const MainPage = () => {
   return (
-    <div>
-      <div>
-        <Input placeholder="김병원" />
-      </div>
-
-      <div className="flex text-8 ">
+    <div className="p-10 mt-[100px]">
+      <div className="flex justify-center text-[32px] font-semibold">
         <p className="text-col2">병원</p>
         <p className="text-gray-800">을 </p>
         <p className="text-col1">내 집</p>
@@ -22,8 +18,9 @@ const MainPage = () => {
       <div className="flex justify-center p-10">
         <img src={logo} alt="Logo" />
       </div>
-      <div className="flex justify-center">
-        <LoginButton text="로그인" />
+      <div className="flex flex-col gap-3">
+        <LoginButton className="" text="로그인" />
+        <LoginButton text="회원가입" />
       </div>
     </div>
   );

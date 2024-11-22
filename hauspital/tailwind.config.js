@@ -5,6 +5,8 @@ export default {
     extend: {colors: {
       white: "#FFF",
       black: "#000000",
+      col1: "#9747FF",
+      col2: "#5260FF",
       orange: {
         50: "#FFFAE6",
       },},
