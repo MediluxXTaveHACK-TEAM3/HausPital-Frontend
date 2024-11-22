@@ -15,6 +15,8 @@ import AddressPage from "./pages/AddressPage";
 import UnivHosPage from "./pages/UnivHosPage";
 import TownHosPage from "./pages/TownHosPage";
 import IllnessPage from "./pages/IllnessPage";
+import PredictPage from "./pages/PredictPage";
+import ConfirmPage from "./pages/ConfirmPage";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
         <Route path="/univhos" element={<UnivHosPage />} />
         <Route path="/townhos" element={<TownHosPage />} />
         <Route path="/illness" element={<IllnessPage />} />
+        <Route path="/predict" element={<PredictPage />} />
+        <Route path="/confirm" element={<ConfirmPage />} />
       </Routes>
     </Router>
   );

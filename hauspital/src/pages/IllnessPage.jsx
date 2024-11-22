@@ -7,6 +7,7 @@ import Input from "../components/Input";
 import { useNavigate } from "react-router-dom";
 
 const IllnessPage = () => {
+  const nav = useNavigate();
   return (
     <>
       <div>
