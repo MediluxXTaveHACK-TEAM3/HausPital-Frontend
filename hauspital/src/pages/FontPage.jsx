@@ -1,18 +1,22 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import checkIcon from "../assets/onboardingPage/check.svg";
 const FontPage = () => {
+  const navigate = useNavigate();
   const [selectedSize, setSelectedSize] = useState(null); // 선택된 항목 추적
 
   const handleClick = (size) => {
     setSelectedSize(size);
   };
-  const [isClicked, setIsClicked] = useState(true);
+  const handleNextClick = () => {
+    navigate(`/name`);
+  };
   return (
     <div className="flex flex-col pb-20">
-      <div className="mt-[3.25rem] text-[24px] font-semibold">
+      <div className=" ml-5 mt-[3.25rem] text-[24px] font-semibold">
         어떤 크기가 가장 마음에 드세요?
       </div>
-      <div className="mt-4 text-[14px] font-medium text-gray-500">
+      <div className="ml-5 mt-4 text-[14px] font-medium text-gray-500">
         앞으로의 하우스피탈 사용에 도움이 될거에요!
       </div>
       <div className="flex flex-col items-center mt-16 gap-2">
@@ -62,7 +66,10 @@ const FontPage = () => {
       </div>
 
       {selectedSize && (
-        <div className="flex justify-center mx-5 py-5 gap-2.5 mt-[63px] bg-gray-600 font-bold text-s2 text-white w-[353px] rounded-2xl cursor-pointer">
+        <div
+          className="flex justify-center mx-5 py-5 gap-2.5 mt-[63px] bg-gray-600 font-bold text-s2 text-white w-[353px] rounded-2xl cursor-pointer"
+          onClick={handleNextClick}
+        >
           <img src={checkIcon} alt="Check Icon" />
           확인했어요
         </div>

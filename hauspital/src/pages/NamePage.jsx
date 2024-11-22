@@ -11,13 +11,7 @@ const NamePage = () => {
   return (
     <>
       <div>
-        <Header
-          text="내 정보 입력하기"
-          page="1"
-          leftChild={
-            <BackButton className="pt-8 text-[40px] font-bold" text="<" />
-          }
-        />
+        <Header text="내 정보 입력하기" page="1" />
       </div>
       <div>
         <Title text="이름을 입력해주세요" />
