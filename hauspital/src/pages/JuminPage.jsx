@@ -24,7 +24,7 @@ const JuminPage = () => {
         <Title text="주민등록번호 앞자리를 입력해주세요" />
       </div>
 
-      <div className="flex justify-center mt-[90px]">
+      <div className="flex justify-center mt-[25px]">
         <Input placeholder="971021" />
       </div>
 

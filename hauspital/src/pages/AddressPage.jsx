@@ -23,7 +23,7 @@ const AddressPage = () => {
         <Title text="주소를 입력해주세요" />
       </div>
 
-      <div className="flex justify-center mt-[90px]">
+      <div className="flex justify-center mt-[60px]">
         <Input placeholder="서울시 병원동 의사구" />
       </div>
 

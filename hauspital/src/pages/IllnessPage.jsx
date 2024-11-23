@@ -23,7 +23,7 @@ const IllnessPage = () => {
         <Title text="기저질환을 입력해주세요" />
       </div>
 
-      <div className="flex justify-center mt-[90px]">
+      <div className="flex justify-center mt-[60px]">
         <Input placeholder="기저질환" add="+ 추가하기" />
       </div>
 

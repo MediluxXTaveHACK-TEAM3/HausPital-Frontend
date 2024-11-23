@@ -23,7 +23,7 @@ const TownHosPage = () => {
         <Title text="다니는 동네 병원🏥을 입력해주세요" />
       </div>
 
-      <div className="flex justify-center mt-[65px]">
+      <div className="flex justify-center mt-[25px]">
         <Input
           placeholder="하우스피탈대학병원"
           tag="동네병원"
