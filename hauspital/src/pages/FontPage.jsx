@@ -19,7 +19,7 @@ const FontPage = () => {
       <div className="ml-5 mt-4 text-[14px] font-medium text-gray-500">
         앞으로의 하우스피탈 사용에 도움이 될거에요!
       </div>
-      <div className="flex flex-col items-center mt-16 gap-2">
+      <div className="flex flex-col items-center mt-10 gap-2">
         {/* 첫 번째 선택 */}
         <div
           className={`flex justify-center text-s1 font-semibold px-[1.4375rem] py-[2.0625rem] border-2 w-[353px] rounded-2xl cursor-pointer ${
@@ -67,7 +67,7 @@ const FontPage = () => {
 
       {selectedSize && (
         <div
-          className="flex justify-center mx-5 py-5 gap-2.5 mt-[63px] bg-gray-600 font-bold text-s2 text-white w-[353px] rounded-2xl cursor-pointer"
+          className="flex justify-center mx-5 py-5 gap-2.5 mt-[30px] bg-gray-600 font-bold text-s2 text-white w-[353px] rounded-2xl cursor-pointer"
           onClick={handleNextClick}
         >
           <img src={checkIcon} alt="Check Icon" />
