@@ -23,8 +23,13 @@ body {
 }
 
 #root {
-  @apply w-[393px] h-[750px] bg-gradient-to-b from-[#FFFFFF] via-[#FFF] to-[#BFC4FF];
+  @apply w-[393px] h-[750px];
   margin: 0 auto;
+  background: linear-gradient(
+    180deg,
+    #fff 87%,
+    #bfc4ff 100%
+  ); /* 배경 속성 추가 */
 }
 @media (max-width: 24rem) {
   #root {
