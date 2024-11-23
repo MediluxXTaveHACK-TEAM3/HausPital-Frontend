@@ -5,13 +5,16 @@ import pin3 from "../../assets/pin3.svg";
 import docmark from "../../assets/doctorPage/doctor-mark.svg";
 
 const { kakao } = window;
-const MyMap = () => {
+const MyMapBefore = () => {
   const [map, setMap] = useState(null);
 
   //처음 지도 그리기
   useEffect(() => {
     const container = document.getElementById("map");
-    const options = { center: new kakao.maps.LatLng(37.4467466, 127.1315632) };
+    const options = {
+      center: new kakao.maps.LatLng(37.4467466, 127.1315632),
+      level: 4,
+    };
     const kakaoMap = new kakao.maps.Map(container, options);
     setMap(kakaoMap);
 
@@ -52,13 +55,29 @@ const MyMap = () => {
         title: "5순위 환자",
         latlng: new kakao.maps.LatLng(37.447194, 127.1314697),
       },
+      {
+        title: "6순위 환자",
+        latlng: new kakao.maps.LatLng(37.443846, 127.1300627),
+      },
+      {
+        title: "7순위 환자",
+        latlng: new kakao.maps.LatLng(37.4455091, 127.1335011),
+      },
+      {
+        title: "8순위 환자",
+        latlng: new kakao.maps.LatLng(37.4474043, 127.1336935),
+      },
+      {
+        title: "9순위 환자",
+        latlng: new kakao.maps.LatLng(37.4462342, 127.1298103),
+      },
     ];
     const pinImages = [pin1, pin2, pin3];
     // 마커 생성
     positions.forEach((position, index) => {
-      const imageSize = new kakao.maps.Size(35, 38); // 마커 이미지 크기
+      const imageSize = new kakao.maps.Size(24, 35); // 마커 이미지 크기
       const markerImage = new kakao.maps.MarkerImage(
-        pinImages[Math.min(index, 2)], // 첫 번째는 pin1, 두 번째는 pin2, 이후는 pin3
+        pin3, // 첫 번째는 pin1, 두 번째는 pin2, 이후는 pin3
         imageSize
       );
 
@@ -75,4 +94,4 @@ const MyMap = () => {
   console.log("되나", window.kakao);
   return <div id="map" className="w-[353px] h-[374px] rounded-3xl"></div>;
 };
-export default MyMap;
+export default MyMapBefore;

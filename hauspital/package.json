@@ -1,6 +1,7 @@
 {
   "name": "hauspital",
   "private": true,
+  "proxy": "http://10.10.151.245:5000",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import NextButton from "../components/NextButton";
 import Header from "../components/Header";
 import BackButton from "../components/BackButton";
@@ -9,6 +10,18 @@ import { useNavigate } from "react-router-dom";
 
 const MainPage = () => {
   const nav = useNavigate();
+  useEffect(() => {
+    const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+    fetch(`${API_BASE_URL}/patients/all`)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
+      .then((data) => console.log(data))
+      .catch((err) => console.error("Fetch error:", err));
+  }, []);
 
   return (
     <>

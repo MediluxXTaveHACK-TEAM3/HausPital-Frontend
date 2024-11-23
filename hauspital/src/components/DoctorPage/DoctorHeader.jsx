@@ -1,5 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import backIcon from "../../assets/doctorPage/back.svg";
 const DoctorHeader = ({ text }) => {
+  const navigate = useNavigate();
+  const handleBackClick = () => {
+    navigate(-1);
+  };
   return (
     <div>
       <div className="flex p-5 gap-5 w-[393px]">
