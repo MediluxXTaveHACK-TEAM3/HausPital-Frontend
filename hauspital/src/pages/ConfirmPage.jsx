@@ -1,3 +1,4 @@
+import { useState } from "react";
 import NextButton from "../components/NextButton";
 import Header from "../components/Header";
 import BackButton from "../components/BackButton";
@@ -8,6 +9,8 @@ import { useNavigate } from "react-router-dom";
 
 const ConfirmPage = () => {
   const nav = useNavigate();
+  const [text, setText] = useState("추가 진료 원해요");
+
   return (
     <div>
       <Header
@@ -25,7 +28,12 @@ const ConfirmPage = () => {
         </p>
 
         <div className="flex flex-col items-center ">
-          <div className="py-[30px] mt-[15px] w-[320px] bg-col3 text-[30px] text-white rounded-xl">
+          <div
+            className="py-[30px] mt-[15px] w-[320px] bg-col3 text-[30px] text-white rounded-xl"
+            onClick={() => {
+              nav(`/predict`);
+            }}
+          >
             <p className="flex justify-center">오늘 오후 6시</p>
             <p className="flex justify-center">전후로</p>
           </div>
@@ -40,9 +48,9 @@ const ConfirmPage = () => {
       <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2">
         <div className="flex justify-center">
           <NextButton
-            text="추가 진료 원해요"
+            text={text}
             onClick={() => {
-              nav(`/predict`);
+              setText("추가 진료 접수되었습니다");
             }}
           />
         </div>
