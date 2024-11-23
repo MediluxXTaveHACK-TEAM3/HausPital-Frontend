@@ -24,7 +24,7 @@ const MainPage = () => {
   }, []);
 
   return (
-    <>
+    <div className="flex flex-col h-full">
       <div className="p-10 mt-[60px]">
         <div className="flex justify-center space-x-3 text-[30px] font-semibold">
           <div className="flex justify-center">
@@ -50,7 +50,7 @@ const MainPage = () => {
         />
         {/* <LoginButton text="가입하기" /> */}
       </div>
-    </>
+    </div>
   );
 };
 
