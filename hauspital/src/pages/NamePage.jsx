@@ -17,7 +17,7 @@ const NamePage = () => {
         <Title text="이름을 입력해주세요" />
       </div>
 
-      <div className="flex justify-center mt-[90px]">
+      <div className="flex justify-center mt-[60px]">
         <Input placeholder="김병원" />
       </div>
 

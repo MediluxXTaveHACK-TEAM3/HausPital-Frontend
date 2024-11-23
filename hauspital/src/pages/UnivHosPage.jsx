@@ -18,11 +18,11 @@ const UnivHosPage = () => {
         <Title text="다니는 대학 병원🏥을 입력해주세요" />
       </div>
 
-      <div className="flex justify-center mt-[60px]">
+      <div className="flex justify-center mt-[20px]">
         <Input placeholder="좋은병원" tag="대학병원" />
       </div>
 
-      <div className="flex justify-center mt-[10px]">
+      <div className="flex justify-center mt-2px]">
         <Input placeholder="김병원" tag="교수" />
       </div>
 

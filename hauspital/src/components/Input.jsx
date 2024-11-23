@@ -50,7 +50,7 @@ const Input = ({ placeholder, onChange, value, tag, add }) => {
                 <p>{hospital}</p>
                 <button
                   onClick={() => handleDeleteHospital(index)}
-                  className="flex text-white border-none text-[13px]"
+                  className="flex items-center text-white border-none text-[13px]"
                 >
                   삭제
                 </button>
