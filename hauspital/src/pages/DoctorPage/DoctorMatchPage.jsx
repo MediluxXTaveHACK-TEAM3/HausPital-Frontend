@@ -16,11 +16,11 @@ const DoctorMatchPage = () => {
           <span className="ml-[65px]">주소</span>
           <span className="ml-[65px]">거리</span>
         </div>
-        <Patient no="1" name="김돌봄" add="은평구" dis="103m" />
-        <Patient no="2" name="최윤서" add="은평구" dis="225m" />
-        <Patient no="3" name="신민혁" add="은평구" dis="312m" />
-        <Patient no="4" name="채정윤" add="은평구" dis="552m" />
-        <Patient no="5" name="박수빈" add="은평구" dis="708m" />
+        <Patient no="1" name="김돌봄" add="수정구" dis="103m" />
+        <Patient no="2" name="최윤서" add="수정구" dis="225m" />
+        <Patient no="3" name="신민혁" add="수정구" dis="312m" />
+        <Patient no="4" name="채정윤" add="수정구" dis="552m" />
+        <Patient no="5" name="박수빈" add="수정구" dis="708m" />
       </div>
     </div>
   );
