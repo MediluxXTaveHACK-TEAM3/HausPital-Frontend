@@ -1,14 +1,14 @@
 import { useEffect } from "react";
-import NextButton from "../components/NextButton";
-import Header from "../components/Header";
-import BackButton from "../components/BackButton";
-import LoginButton from "../components/LoginButton";
-import Title from "../components/Title";
-import Input from "../components/Input";
-import logo from "../assets/logo.svg";
+import NextButton from "../../components/NextButton";
+import Header from "../../components/Header";
+import BackButton from "../../components/BackButton";
+import LoginButton from "../../components/LoginButton";
+import Title from "../../components/Title";
+import Input from "../../components/Input";
+import logo from "../../assets/logo.svg";
 import { useNavigate } from "react-router-dom";
 
-const MainPage = () => {
+const DoctorStartPage = () => {
   const nav = useNavigate();
   useEffect(() => {
     const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
@@ -45,7 +45,7 @@ const MainPage = () => {
         <LoginButton
           text="시작하기"
           onClick={() => {
-            nav(`/onboarding-1`);
+            nav(`/doctor`);
           }}
         />
         {/* <LoginButton text="가입하기" /> */}
@@ -54,4 +54,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default DoctorStartPage;
