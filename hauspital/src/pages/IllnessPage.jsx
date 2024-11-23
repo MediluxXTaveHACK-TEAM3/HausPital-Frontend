@@ -29,7 +29,12 @@ const IllnessPage = () => {
 
       <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2">
         <div className="flex justify-center">
-          <NextButton text="시작하기" />
+          <NextButton
+            text="시작하기"
+            onClick={() => {
+              nav(`/predict`);
+            }}
+          />
         </div>
       </div>
     </>
