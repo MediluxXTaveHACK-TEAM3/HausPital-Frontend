@@ -46,17 +46,26 @@ const MyMap = () => {
       },
       {
         title: "4순위 환자",
-        latlng: new kakao.maps.LatLng(37.446194, 127.1312697),
+        latlng: new kakao.maps.LatLng(37.446194, 127.1310197),
       },
       {
         title: "5순위 환자",
-        latlng: new kakao.maps.LatLng(37.447194, 127.1314697),
+        latlng: new kakao.maps.LatLng(37.445644, 127.1314697),
       },
     ];
     const pinImages = [pin1, pin2, pin3];
     // 마커 생성
     positions.forEach((position, index) => {
-      const imageSize = new kakao.maps.Size(35, 38); // 마커 이미지 크기
+      const maxSize = 45; // 첫 번째 마커 크기
+      const minSize = 25; // 가장 작은 마커 크기
+      const sizeStep = 5; // 마커 크기 감소 폭
+
+      const currentSize = Math.max(
+        maxSize - index * sizeStep, // 크기를 순차적으로 줄임
+        minSize // 최소 크기 보장
+      );
+      const imageSize = new kakao.maps.Size(currentSize, currentSize); // 크기 적용
+      // const imageSize = new kakao.maps.Size(35, 38); // 마커 이미지 크기
       const markerImage = new kakao.maps.MarkerImage(
         pinImages[Math.min(index, 2)], // 첫 번째는 pin1, 두 번째는 pin2, 이후는 pin3
         imageSize

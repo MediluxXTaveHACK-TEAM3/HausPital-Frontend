@@ -5,6 +5,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import MainPage from "./pages/MainPage";
+import DoctorStartPage from "./pages/DoctorPage/DoctorStartPage";
 import DoctorMainPage from "./pages/DoctorPage/DoctorMainPage";
 import DoctorMatchPage from "./pages/DoctorPage/DoctorMatchPage";
 import FontPage from "./pages/FontPage";
@@ -23,6 +24,7 @@ function App() {
     <Router future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
       <Routes>
         <Route path="/" element={<MainPage />} />
+        <Route path="/doc/home" element={<DoctorStartPage />} />
         <Route path="/doctor" element={<DoctorMainPage />} />
         <Route path="/doctor-match" element={<DoctorMatchPage />} />
         <Route path="/onboarding-1" element={<FontPage />} />
