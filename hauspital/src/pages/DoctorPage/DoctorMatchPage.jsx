@@ -3,7 +3,7 @@ import DoctorHeader from "../../components/DoctorPage/DoctorHeader";
 import Patient from "../../components/DoctorPage/Patient";
 const DoctorMatchPage = () => {
   return (
-    <div className="flex flex-col justify-center items-center pb-12">
+    <div className="flex flex-col bg-white justify-center items-center pb-12">
       <DoctorHeader text="환자를 찾았어요" />
       <div className="text-d2 font-medium w-full px-5 mb-4 text-gray-600">
         도움이 급한 환자 순서대로 알려드릴게요
