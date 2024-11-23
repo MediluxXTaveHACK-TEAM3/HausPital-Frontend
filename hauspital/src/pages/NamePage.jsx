@@ -12,7 +12,7 @@ const NamePage = () => {
     <div className="flex flex-col justify-between pb-[81px] h-full">
       <div className="flex flex-col">
         <div>
-          <Header text="내 정보 입력하기" page="1" />
+          <Header text="내 정보 입력하기" page="1/7" />
         </div>
         <div>
           <Title text="이름을 입력해주세요" />

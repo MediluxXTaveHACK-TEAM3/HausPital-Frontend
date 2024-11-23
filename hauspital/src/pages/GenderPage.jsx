@@ -11,7 +11,7 @@ const GenderPage = () => {
   return (
     <>
       <div>
-        <Header text="내 정보 입력하기" page="3" />
+        <Header text="내 정보 입력하기" page="3/7" />
       </div>
       <div>
         <Title text="성별을 골라주세요" />

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import backIcon from "../assets/doctorPage/back.svg";
-const Header = ({ text, page }) => {
+const Header = ({ text, page = "" }) => {
   const navigate = useNavigate();
   const handleBackClick = () => {
     navigate(-1);
@@ -15,7 +15,7 @@ const Header = ({ text, page }) => {
         />
         <div className="text-[20px] text-gray-700 font-semibold">{text}</div>
       </div>
-      <div className="text-[20px] text-gray-500 font-medium">{page}/7</div>
+      <div className="text-[20px] text-gray-500 font-medium">{page}</div>
     </div>
   );
 };

@@ -14,12 +14,7 @@ const PredictPage = () => {
   return (
     <div className="flex flex-col justify-between pb-[81px] h-full">
       <div className="flex flex-col">
-        <Header
-          text="의료인과 매칭이 됐어요"
-          leftChild={
-            <BackButton className="pt-8 text-[40px] font-bold" text="<" />
-          }
-        />
+        <Header text="의료인과 매칭이 됐어요" />
 
         <div className="flex flex-col font-semibold">
           <p className="flex justify-center mt-[50px] text-[25px]">
