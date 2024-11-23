@@ -18,7 +18,7 @@ const ConfirmPage = () => {
 
         <div className="flex flex-col font-semibold">
           <p className="flex justify-center mt-[50px] text-[25px]">
-            📌김병원님!
+            📌최윤서님!
           </p>
 
           <p className="flex justify-center mt-[50px] text-[26px]">
