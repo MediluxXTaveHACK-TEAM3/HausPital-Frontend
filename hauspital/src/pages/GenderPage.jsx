@@ -4,7 +4,7 @@ import BackButton from "../components/BackButton";
 import LoginButton from "../components/LoginButton";
 import Title from "../components/Title";
 import Input from "../components/Input";
-import GenderButton from "../components/genderButton";
+import GenderButton from "../components/GenderButton";
 import { useNavigate } from "react-router-dom";
 
 const GenderPage = () => {
