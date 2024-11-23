@@ -15,6 +15,7 @@ const Header = ({ text, page }) => {
         />
         <div className="text-[20px] text-gray-700 font-semibold">{text}</div>
       </div>
+      <div className="text-[20px] text-gray-500 font-medium">{page}/7</div>
     </div>
   );
 };

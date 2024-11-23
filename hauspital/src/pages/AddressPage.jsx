@@ -9,29 +9,29 @@ import { useNavigate } from "react-router-dom";
 const AddressPage = () => {
   const nav = useNavigate();
   return (
-    <>
-      <div>
-        <Header text="내 정보 입력하기" page="4" />
-      </div>
-      <div>
-        <Title text="주소를 입력해주세요" />
-      </div>
+    <div className="flex flex-col justify-between pb-[81px] h-full">
+      <div className="flex flex-col">
+        <div>
+          <Header text="내 정보 입력하기" page="4" />
+        </div>
+        <div>
+          <Title text="주소를 입력해주세요" />
+        </div>
 
-      <div className="flex justify-center mt-[60px]">
-        <Input placeholder="서울시 병원동 의사구" />
-      </div>
-
-      <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2">
-        <div className="flex justify-center">
-          <NextButton
-            text="다음"
-            onClick={() => {
-              nav(`/univhos`);
-            }}
-          />
+        <div className="flex justify-center mt-[60px]">
+          <Input placeholder="서울시 병원동 의사구" />
         </div>
       </div>
-    </>
+
+      <div className="flex justify-center">
+        <NextButton
+          text="다음"
+          onClick={() => {
+            nav(`/univhos`);
+          }}
+        />
+      </div>
+    </div>
   );
 };
 

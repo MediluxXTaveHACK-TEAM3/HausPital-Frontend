@@ -10,33 +10,33 @@ const UnivHosPage = () => {
   const nav = useNavigate();
 
   return (
-    <>
-      <div>
-        <Header text="내 정보 입력하기" page="5" />
-      </div>
-      <div>
-        <Title text="다니는 대학 병원🏥을 " text2="입력해주세요" />
-      </div>
+    <div className="flex flex-col justify-between pb-[81px] h-full">
+      <div className="flex flex-col">
+        <div>
+          <Header text="내 정보 입력하기" page="5" />
+        </div>
+        <div>
+          <Title text="다니는 대학 병원🏥을 " text2="입력해주세요" />
+        </div>
 
-      <div className="flex justify-center mt-[20px]">
-        <Input placeholder="좋은병원" tag="대학병원" />
-      </div>
+        <div className="flex justify-center mt-[20px]">
+          <Input placeholder="좋은병원" tag="대학병원" />
+        </div>
 
-      <div className="flex justify-center mt-2px]">
-        <Input placeholder="김병원" tag="교수" />
-      </div>
-
-      <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2">
-        <div className="flex justify-center mt-[110px]">
-          <NextButton
-            text="다음"
-            onClick={() => {
-              nav(`/townhos`);
-            }}
-          />
+        <div className="flex justify-center mt-2px]">
+          <Input placeholder="김병원" tag="교수" />
         </div>
       </div>
-    </>
+
+      <div className="flex justify-center mt-[110px]">
+        <NextButton
+          text="다음"
+          onClick={() => {
+            nav(`/townhos`);
+          }}
+        />
+      </div>
+    </div>
   );
 };
 
