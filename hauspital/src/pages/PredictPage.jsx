@@ -37,7 +37,7 @@ const PredictPage = () => {
       <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2">
         <div className="flex justify-center">
           <NextButton
-            text="추가 진료 원해요"
+            text="추가 진료 접수되었습니다"
             onClick={() => {
               nav(`/confirm`);
             }}

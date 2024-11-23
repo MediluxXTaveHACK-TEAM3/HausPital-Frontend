@@ -17,7 +17,7 @@ const GenderPage = () => {
         <Title text="성별을 골라주세요" />
       </div>
 
-      <div className="flex flex-col items-center mt-[90px] gap-[15px]">
+      <div className="flex flex-col items-center mt-[80px] gap-[15px]">
         <GenderButton text="남성" />
         <GenderButton text="여성" />
       </div>
