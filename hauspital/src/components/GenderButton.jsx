@@ -5,7 +5,7 @@ const GenderButton = ({ text }) => {
 
   return (
     <div
-      className="flex w-[353px] h-[44px] justify-center items-center gap-2 rounded-[var(--Corner-Large,16px)] text-white font-bold bg-col3 px-6 py-2 border-none"
+      className="flex w-[353px] h-[44px] justify-center items-center gap-2 rounded-[var(--Corner-Large,16px)] text-white font-bold bg-col3 px-6 py-2 border-none cursor-pointer"
       onClick={() => {
         nav("/address");
       }}
