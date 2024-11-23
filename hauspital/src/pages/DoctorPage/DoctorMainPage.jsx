@@ -5,7 +5,7 @@ import PredictComponent from "../../components/DoctorPage/PredictComponent";
 import DoctorNav from "../../components/DoctorPage/DoctorNav";
 const DoctorMainPage = () => {
   return (
-    <div className="flex flex-col items-center pb-12">
+    <div className="flex flex-col bg-white items-center pb-12">
       <DoctorHeader text="환자를 찾고 있어요" />
       <div className="text-d2 font-medium w-full px-5 mb-4 text-gray-600">
         최대 6명이내 내 주변 5km이내 환자를 찾고 있어요
