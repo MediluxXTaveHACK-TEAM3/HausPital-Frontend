@@ -8,7 +8,11 @@ const DoctorHeader = ({ text }) => {
   return (
     <div>
       <div className="flex p-5 gap-5 w-[393px]">
-        <img className="w-6 h-6 cursor-pointer" src={backIcon} />
+        <img
+          className="w-6 h-6 cursor-pointer"
+          src={backIcon}
+          onClick={handleBackClick}
+        />
         <div className="text-d1 text-gray-700 font-semibold">{text} </div>
       </div>
     </div>
